@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+.row{
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.col {
+    position: relative;
+    border: 1px solid white;
+    min-width: 200px;
+}
+.information, .col>img{
+    width: 220px;
+    height: 350px;
+}
+.col>img {
+    padding: 25px;
+    border-radius: 5px;
+}
+.information {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0%;
+    opacity: 0;
+}
+.information:hover{
+    opacity: 1;
+    transition: opacity 1s ;
+}
+.text {
+    margin-top: 20%;
+}
